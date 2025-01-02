@@ -1,11 +1,9 @@
-
-baza = int(input("Podaj baze: "))     
-wykladnik = int(input("Podaj wykladnik: ")) 
-wynik = 1     
-
-
-for _ in range(wykladnik):
-    wynik *= baza
-
-
-print(f"{baza} do potęgi {wykladnik} wynosi: {wynik}")
+def szybkie_potegowanie_iteracyjne(a, b, m):
+    wynik = 1
+    podstawa = a % m
+    while b > 0:
+        if b % 2 == 1: 
+            wynik = (wynik * podstawa) % m
+        podstawa = (podstawa * podstawa) % m
+        b //= 2
+    return wynik
