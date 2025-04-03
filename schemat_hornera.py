@@ -1,7 +1,7 @@
-def horner(coeffs, x):
-    result = coeffs[0]
-    for coeff in coeffs[1:]:
-        result = result * x + coeff
+def horner(wsps, x):
+    result = wsps[0]
+    for wsps in wsps[1:]:
+        result = result * x + wpss
     return result
 
 
