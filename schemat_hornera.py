@@ -1,7 +1,7 @@
 def horner(wsps, x):
     result = wsps[0]
     for wsps in wsps[1:]:
-        result = result * x + wpss
+        result = result * x + wsps
     return result
 
 
